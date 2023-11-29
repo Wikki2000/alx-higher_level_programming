@@ -7,5 +7,5 @@ def uppercase(str):
         # Keep the character unchanged if it's not a lowercase letter
         else:
             upper_char = char
-        print(upper_char, end="")
+        print("{}".format(upper_char), end="")
     print()
