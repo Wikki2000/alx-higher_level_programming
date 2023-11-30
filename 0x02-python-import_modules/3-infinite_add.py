@@ -3,9 +3,8 @@
 from sys import argv
 
 if __name__ == "__main__":
-    size = len(argv)
-    if size == 1:
-         print(0)
+    if len(argv) == 1:
+        print(0)
     else:
-        new = [int(item) for item in argv if item != argv[0]]
+        new = [int(item) for item in argv[1:]]  # Exclude the script name
         print(sum(new))
