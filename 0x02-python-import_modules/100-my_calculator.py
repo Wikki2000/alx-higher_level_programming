@@ -16,10 +16,10 @@ if __name__ == "__main__":
     b = int(argv[3])
 
     operations = {
-        "+" : add,
-        "-" : sub,
-        "*" : mul,
-        "/" : div
+        "+": add,
+        "-": sub,
+        "*": mul,
+        "/": div
         }
     result = operations[argv[2]](a, b)
     print("{} {} {} = {}".format(a, argv[2], b, result))

@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-import alphabet
-print()
+from alphabet import print_alpha
+print_alpha()
