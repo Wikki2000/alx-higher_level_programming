@@ -8,6 +8,7 @@ def search_replace(my_list, search, replace):
             new_list[i] = replace
     return new_list
 
+
 """
 Alternatives method:
 #!/usr/bin/python3
