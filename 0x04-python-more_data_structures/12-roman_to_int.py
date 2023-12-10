@@ -9,8 +9,9 @@ def roman_to_int(roman_string):
     total = 0
     for numeral in roman_string:
         current_value = roman_dict[numeral]
-        if current_value >= prev_value:
+        if current_value >= prev_value + 1:
             total += current_value - 2 * prev_value
         else:
-            total += value
+            total += current_value
+        prev_value = current_value
     return total
