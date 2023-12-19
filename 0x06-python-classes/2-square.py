@@ -10,7 +10,7 @@ class Square:
         """Initialize a square instance with a specified size.
 
         Args:
-            size (int, optional): The size of the square. Defaults to 0.
+            size (int): The size of the square. Defaults to 0.
 
         Raises:
             TypeError: If size is not an integer.
