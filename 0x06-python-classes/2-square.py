@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+"""Square module: this class <Square> models a Square object"""
+
+
 class Square:
     """Class definition for a square."""
 
