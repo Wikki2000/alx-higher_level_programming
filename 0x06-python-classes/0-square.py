@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
-"""Squa module: this class <Square> models a Square object"""
-
+"""Square module: This class <Square> models a Square object"""
 
 class Square:
     """Sqaure class
