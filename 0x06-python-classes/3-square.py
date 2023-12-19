@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-
 """This module define a <square> call"""
+
 
 class Square:
     """A definition of a class <square>"""
