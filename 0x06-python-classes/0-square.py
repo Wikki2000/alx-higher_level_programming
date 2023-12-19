@@ -2,6 +2,7 @@
 
 """Square module: This class <Square> models a Square object"""
 
+
 class Square:
     """Sqaure class
 
