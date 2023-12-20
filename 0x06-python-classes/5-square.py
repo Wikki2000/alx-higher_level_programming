@@ -1,56 +1,64 @@
 #!/usr/bin/python3
 
-"""Square module: This <square> module models a sqaure class"""
+"""Square module: this class <Square> models a Square object"""
 
 
 class Square:
-    """Class definition of a square"""
+    """ square class
 
+    this class is a minimal square class with no implementation
+    just pass.
+
+    """
     def __init__(self, size=0):
-        """__init__ method
-        This create an instance of a class
+        """ __init__ method
+
+        this method is a special method that acts as an instance
+        constructor after instantiation
 
         Args:
-            size (int): The <size> attribute of a square
+            size (int): <size> is a private attribute of type integer.
+
         """
+        if type(size) is not int:
+            raise TypeError("size must be an integer")
+        if size < 0:
+            raise ValueError("size must be >= 0")
         self.__size = size
 
+    def area(self):
+        """ Area of the square
+
+        this is a public instance method that compute the area of the Square
+
+        Args:
+            No Args.
+
+        """
+        return (self.__size ** 2)
+
     @property
-    def size(sef):
-        """Getter method of <size> attribute"""
+    def size(self):
+        """ Getter method """
         return self.__size
 
     @size.setter
     def size(self, value):
-        """Setter method of size attribute
-
-        Args:
-            Value (int): The size of the square class
-
-        Raises:
-            TypeError: If size not an integer
-            ValueError: If size less than 0
-        """
+        """ Setter method """
         if type(value) is not int:
             raise TypeError("size must be an integer")
-        elif value < 0:
-            raise ValueError("size must be >= 0")
         self.__size = value
 
-    def area(self):
-        """Area method: Calculate area of a square
-
-        Return:
-            int: Return the square of the size
-        """
-        return self.__size ** 2
-
     def my_print(self):
-        """my_print method: Print the square using '#' character"""
+        """ instance method
+
+        my_print - print the value of __size with the character #
+
+        """
         if self.__size == 0:
             print()
         else:
             for i in range(self.__size):
                 for j in range(self.__size):
-                    print("#", end=" ")
+                    print("#", end="")
                 print()
