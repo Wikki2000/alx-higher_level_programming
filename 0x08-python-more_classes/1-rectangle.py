@@ -18,7 +18,15 @@ class Rectangle:
     """retrieve the property instance"""
     @width.setter
     def width(self, value):
-        """check if width is an integer"""
+        """Setter method for <width> attribute
+
+        Args:
+            value (int): The width of the rectangle to be set
+
+        Raises:
+            TypeError: If width is not an integer
+            ValueError: If width is less than 0
+        """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -32,8 +40,16 @@ class Rectangle:
 
     """retrieve the property instance"""
     @height.setter
+            """Setter method for <width> attribute
+
+        Args:
+            value (int): The width of the rectangle to be set
+
+        Raises:
+            TypeError: If width is not an integer
+            ValueError: If width is less than 0
+        """
     def height(self, value):
-        """check if height is an integer"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
