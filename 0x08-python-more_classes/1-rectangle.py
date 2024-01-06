@@ -24,12 +24,10 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-    """create a property method for private instance"""
     @property
     def height(self):
         return self.__height
 
-    """retrieve the property instance"""
     @height.setter
     def height(self, value):
         """check if height is an integer"""
