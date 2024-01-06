@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""create a class"""
+
+"""Rectangle module: This class model a rectangle"""
 
 
 class Rectangle:
@@ -17,6 +18,15 @@ class Rectangle:
     """retrieve the property instance"""
     @width.setter
     def width(self, value):
+        """Setter method for <width> attribute
+
+        Args:
+            value (int): The width of the rectangle to be set
+
+        Raises:
+            TypeError: If width is not an integer
+            ValueError: If width is less than 0
+        """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -31,6 +41,15 @@ class Rectangle:
     """retrieve the property instance"""
     @height.setter
     def height(self, value):
+        """Setter method for <width> attribute
+
+        Args:
+            value (int): The width of the rectangle to be set
+
+        Raises:
+            TypeError: If width is not an integer
+            ValueError: If width is less than 0
+        """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
