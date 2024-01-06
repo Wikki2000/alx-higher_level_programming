@@ -4,9 +4,16 @@
 
 
 class Rectangle:
-    """instantiate attributes"""
+    """Class definition of a rectangle"""
 
     def __init__(self, width=0, height=0):
+        """__init__ method
+        This method creates an instance of the class
+
+        Args:
+            width (int): The width of the rectangle
+            height (int): The height of the rectangle
+        """
         self.width = width
         self.height = height
 
