@@ -2,6 +2,7 @@
 
 """Rectangle module: This class models a square"""
 
+
 class Rectangle:
     """Class definition of rectangle"""
 
