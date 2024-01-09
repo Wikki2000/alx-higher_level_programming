@@ -17,4 +17,3 @@ if [ -f "__pycache__/$OUTPUT_FILE" ]; then
 else
     echo "Error: Compilation failed."
 fi
-
