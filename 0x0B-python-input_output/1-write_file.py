@@ -6,6 +6,7 @@
 ======================
 """
 
+
 def write_file(filename="", text=""):
     """Function to write to a file"""
     with open(filename, 'w', encoding='UTF-8') as file:
