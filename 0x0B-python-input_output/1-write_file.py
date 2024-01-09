@@ -8,6 +8,8 @@
 
 
 def write_file(filename="", text=""):
-    """Function to write to a file"""
+        """Function to write a string to a text file
+        and return the number of characters written.
+        """
     with open(filename, 'w', encoding='UTF-8') as file:
         return file.write(text)
