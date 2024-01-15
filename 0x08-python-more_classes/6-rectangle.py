@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """Rectangle module: This class model a rectangle"""
 
 
