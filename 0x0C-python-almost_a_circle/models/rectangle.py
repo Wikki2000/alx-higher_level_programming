@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Rectangle Module: This class models a Rectangle"""
-
 from models.base import Base
 
 
@@ -76,7 +75,7 @@ class Rectangle(Base):
         return self.__y
 
     @y.setter
-    def y(self, y):  # <-- Added the missing parameter (y)
+    def y(self, y):
         """Setter method for <y> attribute"""
         if not isinstance(y, int):
             raise TypeError('y must be an integer')
@@ -88,3 +87,22 @@ class Rectangle(Base):
     def area(self):
         """ calculate rectangle area """
         return self.width * self.height
+
+    def display(self):
+        """ Display Rectangle as a str rep suing '#' char """
+        for item in ['#' * self.__width] * self.__height:
+            print(item)
+
+    def __str__(self):
+        """ String rep. of the instances """
+        return '[Rectangle] ({}) {}/{} - {}/{}'.format(self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, *args, **kwargs):
+        """Update the attribute of the rectangle class"""
+        attributes = ['id', 'width', 'height', 'x', 'y']
+        for i in range(min(len(args), len(attributes))):
+            setattr(self, attributes[i], args[i])
+
+        #Update attribute using Non-keyword arguement
+        for key, value in kwargs.items():
+            setattr(self, key, value)
