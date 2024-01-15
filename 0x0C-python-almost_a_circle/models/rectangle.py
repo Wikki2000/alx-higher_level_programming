@@ -100,9 +100,10 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """Update the attribute of the rectangle class"""
         attributes = ['id', 'width', 'height', 'x', 'y']
+        # To prevent out of range error
         for i in range(min(len(args), len(attributes))):
             setattr(self, attributes[i], args[i])
 
-        #Update attribute using Non-keyword arguement
+        # Update attribute using Non-keyword arguement
         for key, value in kwargs.items():
             setattr(self, key, value)
