@@ -109,6 +109,6 @@ class Rectangle(Base):
             setattr(self, key, value)
 
     def to_dictionary(self):
-        """Return dict. of an object""""
+        """Return dict. of an object"""
         obj_dict = self.__dict__.copy()
         return obj_dict
