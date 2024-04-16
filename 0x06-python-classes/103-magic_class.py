@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-
+"""Python class MagicClass that does Python bytecode"""
 import math
+
 
 class MagicClass:
     """MagicClass with similar functionality as the provided bytecode."""
