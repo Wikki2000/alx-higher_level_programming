@@ -1,5 +1,11 @@
 #!/usr/bin/node
-function add (x, y) {
-  return x + y;
+exports.add = function (a, b) {
+  const sum = Number(a) + Number(b);
+#!/usr/bin/node
+function add (a, b) {
+  const sum = Number(a) + Number(b);
+  return sum;
 }
-module.exports = add;
+exports.add = function;
+  return sum;
+};
