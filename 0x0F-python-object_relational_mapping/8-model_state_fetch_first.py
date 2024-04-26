@@ -32,8 +32,7 @@ def list_states(username, password, database):
     try:
         # Retrieve and print all State objects sorted by id
         states = session.query(State).order_by(State.id).first()
-        for state in states:
-            print("{}: {}".format(state.id, state.name))
+        print("{}: {}".format(state.id, state.name))
     except Exception as e:
         print("Error:", e)
     finally:
