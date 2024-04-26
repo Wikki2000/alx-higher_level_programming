@@ -1,26 +1,29 @@
 #!/usr/bin/python3
 """
-Modules: This Module models the table of state class
+Model for the State class.
 """
 from sqlalchemy import Column, Integer, String
-from  sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.ext.declarative import declarative_base
 
-
-# Create declarative base class of sqlalchemy
+# Create a declarative base class
 Base = declarative_base()
 
-# Inherit from Base class
 class State(Base):
     """
-    Models the table for state class
+    Represents a state in the database.
+
+    Attributes:
+        id (int): The unique identifier for the state.
+        name (str): The name of the state.
     """
-    __tablename__ = 'states'
-    id = column(Integer,
-                unique=true,
-                autoincrement=true,
-                nullable=false,
-                primary_key=true
+    __tablename__ = "states"
+    id = Column(Integer,
+                unique=True,
+                autoincrement=True,
+                nullable=False,
+                primary_key=True
                 )
-    name = column(String(128),
-                nullable=false,
-                )
+    name = Column(String(128),
+                  nullable=False,
+                  unique=True
+                  )
