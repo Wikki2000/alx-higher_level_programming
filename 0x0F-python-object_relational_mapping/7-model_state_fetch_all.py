@@ -25,7 +25,6 @@ def list_states(username, password, database):
 
     # Create engine and establish connection
     engine = create_engine(db_url)
-    Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine) # bind and create class of session
     session = Session()
 
