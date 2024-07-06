@@ -12,8 +12,8 @@ if __name__ == "__main__":
     url = sys.argv[1]
     email = sys.argv[2]
 
-    # Prepare data to be sent in the POST request
-    # parse.urlencode converts it into a URL-encoded string for server consumption.
+    # Prepare data to be sent in the POST request.
+    # parse.urlencode converts it into a URL-encoded string.
     # encode() converts the URL-encoded string into bytes,
     # which is required for sending data in a POST request.
     data = parse.urlencode({'email': email}).encode()
