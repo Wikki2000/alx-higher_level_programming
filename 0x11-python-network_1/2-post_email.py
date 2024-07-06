@@ -25,4 +25,4 @@ if __name__ == "__main__":
     with request.urlopen(req) as response:
         # Read and decode the response body
         body = response.read().decode('utf-8')
-        print(body)
+        print("Your email is:", body)
