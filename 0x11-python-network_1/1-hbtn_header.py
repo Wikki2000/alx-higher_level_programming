@@ -10,7 +10,8 @@ from urllib import request
 if __name__ == "__main__":
     url = sys.argv[1]
 
-    req = request.Request(url) # Create a request object
+    # Create a request object
+    req = request.Request(url)
 
     # Send the request and get the response
     with request.urlopen(req) as response:
