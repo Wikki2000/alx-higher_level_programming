@@ -8,19 +8,18 @@ import sys
 from urllib import request, parse
 
 if __name__ == "__main__":
+    # Read command line arguments
     url = sys.argv[1]
     email = sys.argv[2]
 
-    # Create the data dictionary
-    data = {'email': email}
+    # Prepare data to be sent in the POST request
+    data = parse.urlencode({'email': email}).encode()
 
-    # Encode the data
-    data = parse.urlencode(data).encode()
+    # Create a POST request
+    req = request.Request(url, data=data, method='POST')
 
-    # Create a Request object
-    req = request.Request(url, data=data)
-
-    # Send the request and display the response body
+    # Send the request and handle the response
     with request.urlopen(req) as response:
+        # Read and decode the response body
         body = response.read().decode('utf-8')
         print(body)
