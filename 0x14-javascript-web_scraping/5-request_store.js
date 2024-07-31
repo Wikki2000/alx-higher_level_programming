@@ -10,7 +10,7 @@ if (args.length !== 4) {
 }
 
 const url = args[2];
-const file_path = args[3];
+const filePath = args[3];
 request.get(url, (error, response, body) => {
   if (error) return console.log(error);
 
