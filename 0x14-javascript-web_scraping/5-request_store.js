@@ -15,7 +15,7 @@ request.get(url, (error, response, body) => {
   if (error) return console.log(error);
 
   try {
-    fs.writeFileSync(file_path, body, 'utf-8');
+    fs.writeFileSync(filePath, body, 'utf-8');
   } catch (error) {
     console.log(error);
   }
