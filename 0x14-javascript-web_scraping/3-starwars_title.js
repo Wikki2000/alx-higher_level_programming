@@ -3,7 +3,7 @@
 const request = require('request');
 const args = process.argv;
 
-if (args.length != 3) {
+if (args.length !== 3) {
   console.log(`Usage: node ${args[1]} <movieID>`);
   process.exit(1);
 }
