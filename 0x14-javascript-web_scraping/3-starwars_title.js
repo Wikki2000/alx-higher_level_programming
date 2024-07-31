@@ -8,7 +8,7 @@ if (args.length != 3) {
   process.exit(1);
 }
 
-const movieId = args[2]
+const movieId = args[2];
 const url = `https://swapi-api.alx-tools.com/api/films/${movieId}`;
 request.get(url, (err, response, body) => {
   if (err) {
