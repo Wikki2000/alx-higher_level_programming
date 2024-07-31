@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const request = require("request");
+const request = require('request');
 const args = process.argv;
 
 if (args.length != 3) {
