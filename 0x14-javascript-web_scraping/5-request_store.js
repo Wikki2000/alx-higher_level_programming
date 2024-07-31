@@ -2,7 +2,7 @@
 
 const request = require('request');
 const fs = require('fs');
-const args = process.argv
+const args = process.argv;
 
 if (args.length !== 4) {
   console.log(`Usage: ${args[1]} <URL> <filePath>`);
